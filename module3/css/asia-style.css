@@ -1,0 +1,183 @@
+html {
+	background: url(../img/Asia_background.png) no-repeat center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover; 
+  	font-family: Tahoma;
+}
+
+.wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.inline { 
+    display: inline-block; 
+}
+
+header {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.logo {
+	position: relative;
+	float: left;
+    width: 276px;
+    height: 147px;
+}
+
+/* resize images */
+.logo img {
+    width: 100%;
+    height: 147px;
+}
+
+.logo p {
+	font-size: 0.8em;
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	margin: 0px 0 0 -25%;
+  	left: 50%;
+}
+
+header .contacts {
+	float: right;
+	height: 147px;
+	width: 276px;
+	position: relative;
+}
+
+
+header .contacts .text {
+	position: absolute;
+	width: auto;
+	bottom: 10px;
+	right: 0;
+}
+
+header .contacts p span {
+	font-size: 1.1em;
+}
+header .contacts p {
+	line-height: 1.5;
+	color: white;
+	font-size: 0.7em;
+}
+
+.content {
+	margin-top: 14px;
+	clear:both;
+	overflow: hidden;
+	margin-bottom: 20%;
+}
+
+.item {
+	float: left;
+	width: 33.3%;
+	padding-bottom: 35%;
+	position: relative;
+}
+
+.photo {
+	position: absolute;
+	left: 5px;
+    right: 5px;
+}
+
+.photo p {
+	color: white;
+	text-align: center;
+}
+
+.first {
+	transform: translateX(-5px);
+}
+
+.third {
+	transform: translateX(5px);
+}
+
+
+.photo img {
+	box-sizing: border-box;
+	width: 100%;
+	border: 3px solid #c9c9c9;
+}
+
+footer {
+	margin-bottom: 40px;
+}
+
+footer p {
+	color: white;
+	text-align: center;
+}
+
+
+@media screen and (max-width:770px) {
+	header .contacts {
+		width: 117px;
+		float:right;
+	}
+
+}
+
+
+	
+@media screen and (max-width:530px) {
+	header {
+		text-align: center;
+	}
+	
+	.item {
+		width: 50%;
+		padding-bottom: 50%;
+	}
+
+	.inline {
+		display: inline-block;
+		float: none;
+		margin-top: -2px;
+		margin-bottom: -2px;
+	}
+
+	.first {
+		transform: translateX(0px);
+	}
+
+	.third {
+		transform: translateX(0px);
+	}
+
+
+	header .contacts {
+		width: 276px;
+		height: 70px;
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.logo {
+		width: 218px;
+	}
+
+	header .contacts {
+		width: 218px;
+	}
+
+	.item {
+		display: block;
+		width: 100%;
+		margin-bottom: 25%;
+	}
+}
+
+
+
+
+
